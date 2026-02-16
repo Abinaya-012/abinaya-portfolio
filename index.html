@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abinaya J | AI Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PARTICLE BACKGROUND -->
+<canvas id="bg"></canvas>
+<div class="cursor"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">AJ</span></div>
+    <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#technical">Technical Skills</a></li>
+        <li><a href="#softskills">Soft Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#workshops">Workshops</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="home">
+    <h1>Hi, I'm <span>Abinaya J</span></h1>
+    <h3><span id="typing"></span></h3>
+    <p>Passionate about AI, Machine Learning, and building intelligent applications.</p>
+    <a href="assets/Abinaya_J(Resume).docx" download class="btn">
+        <i class="fa-solid fa-download"></i> Download Resume
+    </a>
+</section>
+
+
+<!-- ABOUT ME -->
+<section id="about" class="section">
+    <h2><i class="fa-solid fa-user-astronaut"></i> About Me</h2>
+    <div class="about-card">
+        <p>
+            Motivated B.Tech student specializing in Artificial Intelligence and Data Science with 8.63 CGPA.
+            Proven ability to build intelligent systems using Machine Learning to solve real-world challenges.
+            Passionate about developing intelligent applications that combine machine learning, backend engineering, and user-focused design.
+        </p>
+        <p>
+            Education:<br>
+            <i class="fa-solid fa-graduation-cap"></i> B.Tech - AI & Data Science, Kumaraguru College of Technology | 2023-2027 | 8.63 CGPA<br>
+            <i class="fa-solid fa-school"></i> HSC, Sri Vidya Matriculation Higher Secondary School | 2021-2023 | 97%
+        </p>
+    </div>
+</section>
+
+<!-- TECHNICAL SKILLS -->
+<section id="technical" class="section">
+    <h2><i class="fa-solid fa-microchip"></i> Technical Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-card"><i class="fa-brands fa-python"></i><h3>Programming</h3><p>Python, SQL</p></div>
+        <div class="skill-card"><i class="fa-solid fa-robot"></i><h3>AI & ML</h3><p>ML Algorithms, TensorFlow, Deep Learning, NLP, RAG Systems</p></div>
+        <div class="skill-card"><i class="fa-solid fa-layer-group"></i><h3>Libraries</h3><p>NumPy, Pandas, Scikit-learn, Matplotlib</p></div>
+        <div class="skill-card"><i class="fa-solid fa-chart-simple"></i><h3>Data Visualization</h3><p>Power BI</p></div>
+        <div class="skill-card"><i class="fa-solid fa-code"></i><h3>Frontend Tools</h3><p>Figma, Wix</p></div>
+        <div class="skill-card"><i class="fa-solid fa-toolbox"></i><h3>Other Tools</h3><p>Git, GitHub, Weka, Ollama</p></div>
+    </div>
+</section>
+
+<!-- SOFT SKILLS -->
+<section id="softskills" class="section">
+    <h2><i class="fa-solid fa-lightbulb"></i> Soft Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-card"><i class="fa-solid fa-comment"></i><p>Effective Communication</p></div>
+        <div class="skill-card"><i class="fa-solid fa-gear"></i><p>Problem Solving</p></div>
+        <div class="skill-card"><i class="fa-solid fa-users"></i><p>Leadership & Team Collaboration</p></div>
+        <div class="skill-card"><i class="fa-solid fa-bolt"></i><p>Adaptability & Quick Learning</p></div>
+        <div class="skill-card"><i class="fa-solid fa-clock"></i><p>Time Management</p></div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <h2><i class="fa-solid fa-diagram-project"></i> Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <i class="fa-solid fa-seedling"></i>
+            <h3>Crop Recommendation & Disease ID System</h3>
+            <p>End-to-end ML system with Streamlit to recommend crops based on NPK soil nutrients & weather patterns. Includes image processing for disease detection.</p>
+        </div>
+        <div class="project-card">
+            <i class="fa-solid fa-leaf"></i>
+            <h3>GreenPulse AI</h3>
+            <p>Random forest model to predict optimal fertilizer usage & data visualizations to promote sustainable farming.</p>
+        </div>
+        <div class="project-card">
+            <i class="fa-solid fa-newspaper"></i>
+            <h3>Fake News Detection (ML & NLP)</h3>
+            <p>Classification model using TF-IDF and LinearSVM to distinguish real & fake news articles.</p>
+        </div>
+        <div class="project-card">
+            <i class="fa-solid fa-truck"></i>
+            <h3>PBL - Stair-Climbing Trolley</h3>
+            <p>Tri-wheel trolley designed for safe heavy load transportation over stairs.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section">
+    <h2><i class="fa-solid fa-certificate"></i> Certifications</h2>
+    <div class="cards-grid">
+        <div class="interactive-card"><i class="fa-solid fa-file-lines"></i><p>Python for Data Science - Great Learning</p></div>
+        <div class="interactive-card"><i class="fa-solid fa-file-lines"></i><p>Artificial Intelligence Foundations - LinkedIn Learning</p></div>
+        <div class="interactive-card"><i class="fa-solid fa-file-lines"></i><p>Data Science Foundations - LinkedIn Learning</p></div>
+        <div class="interactive-card"><i class="fa-solid fa-file-lines"></i><p>Generative AI - GUVI Geek Networks</p></div>
+        <div class="interactive-card"><i class="fa-solid fa-file-lines"></i><p>Cloud Computing Basics - Coursera</p></div>
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+
+<section id="achievements" class="section">
+    <h2><i class="fa-solid fa-trophy"></i> Achievements</h2>
+    <div class="achievements-grid">
+        <div class="achievement-card">
+            <i class="fa-solid fa-award"></i>
+            <h3>Mahatma Gandhi Merit Scholarship</h3>
+            <p>Academic excellence - 2024 & 2025</p>
+        </div>
+        <div class="achievement-card">
+            <i class="fa-solid fa-medal"></i>
+            <h3>Yogasana Sports</h3>
+            <p>Winner at district & state level championship (2024), participated at National Level</p>
+        </div>
+        <div class="achievement-card">
+            <i class="fa-solid fa-certificate"></i>
+            <h3>Certificate of Recognition</h3>
+            <p>Excellence in extracurricular activities (2023-2025)</p>
+        </div>
+        <div class="achievement-card">
+            <i class="fa-solid fa-hands-helping"></i>
+            <h3>Volunteer</h3>
+            <p>Toycathon event at Sakthi Polytechnic College, Erode</p>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- LEADERSHIP -->
+<section id="leadership" class="section">
+    <h2><i class="fa-solid fa-people-group"></i> Leadership</h2>
+    <div class="cards-grid">
+        <div class="interactive-card"><i class="fa-solid fa-user-tie"></i><p>Communication Secretary: Agam Forum (2024-2025)</p></div>
+        <div class="interactive-card"><i class="fa-solid fa-user-tie"></i><p>Event Report Team: Team Evoke (2025-2026)</p></div>
+    </div>
+</section>
+
+<!-- WORKSHOPS -->
+<!-- WORKSHOPS -->
+<section id="workshops" class="section">
+    <h2><i class="fa-solid fa-chalkboard-user"></i> Workshops</h2>
+    <div class="cards-grid">
+        <div class="interactive-card">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Powerhouse of Data Visualization (Power BI)</h3>
+            <p>Kumaraguru Institutions, Coimbatore</p>
+        </div>
+        <div class="interactive-card">
+            <i class="fa-solid fa-robot"></i>
+            <h3>Generative AI: Hands-on with Transformers</h3>
+            <p>Department of AIDS, KCT Campus</p>
+        </div>
+        <div class="interactive-card">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3>Hackathon - Cryptera 25</h3>
+            <p>Participated in problem-solving and solution presentation</p>
+        </div>
+        <div class="interactive-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Startup Idea Presentation</h3>
+            <p>Augmented Reality in Food Processing Sector, Sri Sakthi College of Engineering, Coimbatore</p>
+        </div>
+        <div class="interactive-card">
+            <i class="fa-solid fa-house"></i>
+            <h3>Hackathon Participation – Unstop</h3>
+            <p>Hostel Student Management System</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+    <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
+    <div class="cards-grid">
+        <div class="interactive-card"><i class="fa-solid fa-briefcase"></i><p>Currently working as Forge Innovation Engineer Trainee</p></div>
+    </div>
+</section>
+
+<!-- LANGUAGES -->
+<section id="languages" class="section">
+    <h2><i class="fa-solid fa-language"></i> Languages Known</h2>
+    <div class="cards-grid">
+        <div class="interactive-card"><i class="fa-solid fa-comment"></i><p>English</p></div>
+        <div class="interactive-card"><i class="fa-solid fa-comment"></i><p>Tamil</p></div>
+        <div class="interactive-card"><i class="fa-solid fa-comment"></i><p>Hindi (Basic)</p></div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <h2><i class="fa-solid fa-paper-plane"></i> Contact</h2>
+    <p>📧 <a href="mailto:abinayajbtech@gmail.com">abinayajbtech@gmail.com</a></p>
+    <p>💻 <a href="https://github.com/abinaya-012" target="_blank">github.com/abinaya-012</a></p>
+    <p>🔗 <a href="https://linkedin.com/in/abinaya-jeyakumar" target="_blank">linkedin.com/in/abinaya-jeyakumar</a></p>
+</section>
+
+<footer>
+    © designed by Abinaya J
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

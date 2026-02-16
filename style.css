@@ -1,0 +1,229 @@
+/* ========================================
+   GENERAL RESET
+======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+body {
+    background: #0c0f1b;
+    color: #e0e0e0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+:root {
+    --accent: #38bdf8;
+    --card: rgba(30, 41, 59, 0.85);
+    --glow: #0ea5e9;
+}
+
+/* ========================================
+   NAVBAR
+======================================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+    background: rgba(12, 15, 27, 0.85);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+.logo span {
+    color: var(--accent);
+}
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.navbar a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.navbar a.active,
+.navbar a:hover {
+    color: var(--accent);
+}
+
+/* ========================================
+   HOME SECTION
+======================================== */
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: block;
+}
+
+.home {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    z-index: 1;
+}
+.home h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+.home span {
+    color: var(--accent);
+}
+.home h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+.home p {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+.btn {
+    margin-top: 25px;
+    padding: 14px 30px;
+    background: var(--accent);
+    color: #000;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 0 25px var(--glow);
+    transition: 0.3s;
+}
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* ========================================
+   SECTIONS
+======================================== */
+.section {
+    padding: 80px 80px;
+}
+.section h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* ABOUT */
+.about-card {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 35px rgba(14, 165, 233, 0.15);
+    transition: 0.4s;
+}
+.about-card:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 0 55px rgba(14, 165, 233, 0.25);
+}
+.about-card p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* ========================================
+   GRID CARDS (Skills, Projects, Achievements, etc.)
+======================================== */
+.skills-grid,
+.projects-grid,
+.achievements-grid,
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+/* CARD STYLING */
+.skill-card,
+.project-card,
+.achievement-card,
+.interactive-card {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(14, 165, 233, 0.15);
+    transition: 0.4s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.skill-card i,
+.project-card i,
+.achievement-card i,
+.interactive-card i {
+    font-size: 36px;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+.skill-card:hover,
+.project-card:hover,
+.achievement-card:hover,
+.interactive-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 55px rgba(14, 165, 233, 0.4);
+}
+
+/* ========================================
+   CURSOR
+======================================== */
+.cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(56, 189, 248, 0.5);
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 0.1s;
+    z-index: 300;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+footer {
+    text-align: center;
+    padding: 30px;
+    opacity: 0.6;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+@media (max-width: 768px) {
+    .section {
+        padding: 50px 20px;
+    }
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .home h1 {
+        font-size: 32px;
+    }
+    .home h3 {
+        font-size: 20px;
+    }
+}
